@@ -129,72 +129,75 @@ p{
     outline-color: #333;
     outline-style: dotted;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 500px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
     .birthdayCard {
-        width: 280px;
-        height: 480px;
+        width: 90%;
+        height: auto;
     }
 
     .cardFont,
     .cardInside {
-        width: 280px;
-        height: 480px;
+        width: 100%;
+        height: auto;
     }
 
-    .happy {
-        font-size: 16px;
-        margin: 20px;
+    .happy,
+    .back {
+        font-size: 1.2rem;
+        margin: 20px 10px;
     }
 
-    .balloonOne, .balloonTwo, .balloonThree, .balloonFour {
-        width: 65px;
-        height: 75px;
+    .balloons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 
-    .balloonOne {
-        left: 30px;
-        top: 40px;
-    }
-
-    .balloonTwo {
-        left: 80px;
-        top: 10px;
-    }
-
-    .balloonThree {
-        left: 140px;
-        top: 40px;
-    }
-
+    .balloonOne,
+    .balloonTwo,
+    .balloonThree,
     .balloonFour {
-        left: 200px;
-        top: 10px;
+        position: relative;
+        width: 70px;
+        height: 80px;
+        margin: 10px;
     }
 
-    .balloonOne:before, .balloonTwo:before, .balloonThree:before, .balloonFour:before {
-        height: 115px;
-        top: 70px;
-        left: 30px;
+    .balloonOne:before,
+    .balloonTwo:before,
+    .balloonThree:before,
+    .balloonFour:before {
+        height: 100px;
+        top: 80px;
+        left: 33px;
     }
 
-    .balloonOne:after, .balloonTwo:after, .balloonThree:after, .balloonFour:after {
-        top: 70px;
-        left: 24px;
-    }
-
-    .name {
-        left: 120px;
-        top: 340px;
-        font-size: 14px;
+    .balloonOne:after,
+    .balloonTwo:after,
+    .balloonThree:after,
+    .balloonFour:after {
+        top: 79px;
+        left: 27px;
     }
 
     p {
-        font-size: 14px;
-        margin: 20px;
+        margin: 20px 15px;
+        font-size: 0.95rem;
     }
 
-    .back {
-        font-size: 14px;
-        margin: 20px;
+    .name {
+        position: relative;
+        top: auto;
+        left: auto;
+        text-align: center;
+        margin-top: 20px;
+        display: block;
     }
 }
